@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <style>body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+body{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #6bc1ff, #ff6b6b);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    animation: gradientMove 5s ease infinite;
+}
+button{
+    
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #6bc1ff, #ff6b6b);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+</style>
+</head>
+<body>
+    <h3>select your class</h3>
+    <label for="10">
+    <input type="radio" name="class" class="class x" id="10">class x
+ </label>
+ <br>
+     <label for="11">
+      
+    <input type="radio" name="class" class="class xi" id="10">class xi
+ </label>
+ <br>
+ <button onclick="window.location.href='tejas3.html';">
+    submit
+  </button>
+</body>
+</html>
